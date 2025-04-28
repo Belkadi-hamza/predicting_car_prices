@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 app = Flask(__name__)
 
 # Load model and preprocessing objects
-model = joblib.load('model/lgb_model.pkl')
+model = joblib.load('lgb_model.pkl')
 
 def clean_kilometrage(value):
     """Preprocess kilometrage field"""
